@@ -1,0 +1,10 @@
+{%- assign pub = include.pub -%}
+{%- capture me_bold -%}<strong>{{ site.author.name }}</strong>{%- endcapture -%}
+{%- if pub.doi %}{% assign href = 'https://doi.org/' | append: pub.doi %}{% else %}{% assign href = pub.url %}{% endif -%}
+<li>
+  <p class="item-title">{% if href %}<a href="{{ href }}">{{ pub.title }}</a>{% else %}<span class="item-title-plain">{{ pub.title }}</span>{% endif %}</p>
+  {%- if pub.authors %}<p class="item-authors">{{ pub.authors | replace: site.author.name, me_bold }}</p>{% endif %}
+  {%- if pub.blurb %}<p class="item-blurb">{{ pub.blurb }}</p>{% endif %}
+  <p class="item-meta"><em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}{% if pub.note %} · {{ pub.note }}{% endif %}</p>
+  {%- include figure.html item=pub %}
+</li>

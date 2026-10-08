@@ -1,0 +1,15 @@
+<p class="email-riddle" id="email-riddle">Email: the first three letters of my first name, then the first three of my last name, at pm.me</p>
+<script>
+  // The address is assembled only when clicked, so it never appears in the page or repo source.
+  document.querySelector("#email-reveal").addEventListener("click", function (event) {
+    event.preventDefault();
+    var address = ["ant", "vig"].join("") + "@" + ["pm", "me"].join(".");
+    var link = document.createElement("a");
+    link.href = "mailto:" + address;
+    link.textContent = address;
+    var expanded = document.createElement("span");
+    expanded.className = "email";
+    expanded.append("Email: ", link);
+    this.replaceWith(expanded);
+  });
+</script>

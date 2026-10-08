@@ -1,0 +1,68 @@
+# Selected papers, shown in this order within each section (biology: oldest first).
+# section: ai-safety or biology
+# Your name is bolded automatically. Use * after a name for equal contribution.
+# Optional fields: authors, doi, url, blurb, note, image (in assets/img), image_alt, image_size (small or large) or image_height (in pixels), caption.
+
+- section: ai-safety
+  title: "Targeted recovery of weight-space mechanisms from neural networks"
+  authors: "Antoine Vigouroux & Lee Sharkey"
+  venue: ICML 2026 Workshop on Mechanistic Interpretability
+  year: 2026
+  url: https://arxiv.org/abs/2607.13047
+  blurb: Introduces Targeted Parameter Decomposition, a method to extract only the mechanisms that process specific inputs of interest, making parameter decomposition affordable at scale. Now a supported feature in Goodfire’s parameter decomposition library.
+
+- section: ai-safety
+  title: Making sense of parameter-space decomposition
+  venue: LessWrong
+  year: 2025
+  url: https://www.lesswrong.com/posts/Wo22C8vhveDbDWhAc/making-sense-of-parameter-space-decomposition
+  blurb: An accessible explainer of parameter decomposition – an approach for breaking neural networks into interpretable mechanisms – starting from "what even is a mechanism?"
+  image: parameter-decomposition.webp
+  image_height: 180
+  image_alt: Hand-drawn diagram of weight matrices branching off a network's main stream
+
+- section: biology
+  title: "Tuning dCas9's ability to block transcription enables robust, noiseless knockdown of bacterial genes"
+  authors: "Antoine Vigouroux, Enno Oldewurtel, Lun Cui, David Bikard & Sven van Teeffelen"
+  venue: Molecular Systems Biology
+  year: 2018
+  doi: 10.15252/msb.20177899
+  image: tuning-dcas9.png
+  image_height: 220
+  image_alt: Microscopy of bacteria with shapes ranging from round to long rods
+  caption: Taking control over the shape of bacilliform bacteria through genetic engineering
+
+- section: biology
+  title: "A CRISPRi screen in E. coli reveals sequence-specific toxicity of dCas9"
+  authors: "Lun Cui, Antoine Vigouroux, François Rousset, Hugo Varet, Varun Khanna & David Bikard"
+  venue: Nature Communications
+  year: 2018
+  doi: 10.1038/s41467-018-04209-5
+
+- section: biology
+  title: "Class-A penicillin binding proteins do not contribute to cell shape but repair cell-wall defects"
+  authors: "Antoine Vigouroux, Baptiste Cordier, Andrey Aristov, Enno Oldewurtel, Gizem Özbaykal, Thibault Chaze, Mariette Matondo, David Bikard & Sven van Teeffelen"
+  venue: eLife
+  year: 2020
+  doi: 10.7554/eLife.51998
+  image: class-a-pbps.png
+  image_height: 165
+  image_alt: Time-lapse microscopy of bacterial cells losing their integrity after a genetic circuit is activated
+  caption: Different mechanisms control cell shape at different spatial scales
+
+- section: biology
+  title: "CRISPR tools to control gene expression in bacteria"
+  authors: "Antoine Vigouroux & David Bikard"
+  venue: Microbiology and Molecular Biology Reviews
+  year: 2020
+  doi: 10.1128/MMBR.00077-19
+
+- section: biology
+  title: "60,000 generations of evolution in perpetual exponential growth"
+  authors: "Antoine Vigouroux*, Sadik Yildiz*, Andreas Porse, Harrison Steel & Johan Paulsson"
+  venue: Manuscript in preparation
+  note: "* Equal contribution"
+  image: evolution-machine.jpg
+  image_alt: Close-up picture of an evolution machine 
+  image_height: 260
+  caption: Detail from an evolution machine. The experiment is still running to this day.

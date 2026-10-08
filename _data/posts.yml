@@ -1,0 +1,81 @@
+# Blog posts, sorted newest first (by date) within each section.
+# section: writing
+# best_of: year the post won the Best of LessWrong review (shown as a gold tag linking to that year's page).
+# best_of_category: optional category on that page (e.g. modeling), to filter the list down to it.
+# curated: true if curated on LessWrong (shown as "Curated on LessWrong", or just "Curated" next to a Best of tag).
+# image (in assets/img), image_alt, image_size (small or large) or image_height (in pixels), caption: optional illustration shown under the post.
+# quote: optional {text, author, url}, shown as a small back-cover-style blurb under the description.
+# venue: optional, for posts published outside the blog (shown next to the year).
+# featured: optional list of {label, url, note, style} for other distinctions (blue tags by default; url and note optional;
+#   note shows on hover; style: chocolate for a brown tag).
+
+- section: writing
+  title: "The Talk: a brief explanation of sexual dimorphism"
+  url: https://www.lesswrong.com/posts/yA8DWsHJeFZhDcQuo/the-talk-a-brief-explanation-of-sexual-dimorphism
+  date: 2023-09-18
+  blurb: A bottom-up explanation of why the linear structure of DNA inevitably lead to the evolution of sexual reproduction, and how life became weirder as a result.
+  image: the-talk.png
+  image_height: 190
+  image_alt: "Hand-drawn birds labelled Before selection, Optimal, and Fabulous, each with a more extravagant crest"
+  curated: true
+  best_of: 2023
+  best_of_category: modeling
+
+- section: writing
+  title: This is already your second chance
+  url: https://www.lesswrong.com/posts/BgTsxMq5bgzKTLsLA/this-is-already-your-second-chance
+  date: 2024-07-28
+  featured:
+    - label: 4 chocolate bars received
+      style: chocolate
+      note: The post argued that readers could save the world by putting a chocolate bar under a specific statue in Boston. I found four.
+  blurb: Short story. The last emperor of Earth gets to give exactly one command to a superintelligent machine.
+
+- section: writing
+  title: There is way too much serendipity
+  url: https://www.lesswrong.com/posts/oA23zoEjPnzqfHiCt/there-is-way-too-much-serendipity
+  date: 2024-01-19
+  blurb: Almost every artificial sweetener was discovered by chemists accidentally eating their work in progress.
+  curated: true
+  best_of: 2024
+  best_of_category: modeling
+
+- section: writing
+  title: My journey to the microwave alternate timeline
+  url: https://www.lesswrong.com/posts/8m6AM5qtPMjgTkEeD/my-journey-to-the-microwave-alternate-timeline
+  date: 2026-02-10
+  blurb: Exploring the abandoned branch of the tech tree where the microwave replaced the stove.
+  curated: true
+  quote:
+    text: One of the most fun LW posts I've read in a while.
+    author: Neel Nanda
+    url: https://www.lesswrong.com/posts/8m6AM5qtPMjgTkEeD/my-journey-to-the-microwave-alternate-timeline?commentId=9KZDahQfL2vjt3aqh
+
+- section: writing
+  title: Mechanisms too simple for humans to design
+  url: https://www.lesswrong.com/posts/6hDvwJyrwLtxBLHWG/mechanisms-too-simple-for-humans-to-design
+  date: 2025-01-22
+  featured:
+    - label: Featured in Substack's official newsletter
+      url: https://post.substack.com/p/you-are-simpler-than-microsoft-word
+      note: "The Weekender, Feb 1 2025, headlined with a quote from this post: “You are simpler than Microsoft Word”"
+  blurb: Humans don’t know how to build butterflies, not because butterflies are too complex, but because they are too simple.
+  image: mechanisms-too-simple.webp
+  image_height: 225
+  image_alt: Hand-drawn rod-shaped bacterium twisting itself into a spiral 
+
+- section: writing
+  title: Do bamboos set themselves on fire?
+  url: https://www.lesswrong.com/posts/WNpvK67MjREgvB8u8/do-bamboos-set-themselves-on-fire
+  date: 2022-09-19
+  blurb: Why some bamboos flower only once every 120 years then die all at once, and why forest fires might be part of their reproductive strategy.
+
+- section: writing
+  title: How Φ80 infiltrates research labs
+  url: https://www.asimov.press/p/phi80
+  venue: Asimov Press
+  date: 2026-03-10
+  blurb: How a stealth bacteriophage invades research labs by hitch-hiking with molecular biology techniques.
+  image: phi80.png
+  image_alt: Hand-drawn bacteriophages, all carrying the same black DNA except one with blue DNA, and one empty
+  image_height: 150

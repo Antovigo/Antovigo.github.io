@@ -1,0 +1,62 @@
+---
+layout: default
+image: /assets/img/headshot.jpg
+---
+<header class="hero">
+  <div class="avatar"><img src="{{ '/assets/img/headshot.jpg' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Portrait of {{ site.author.name }}" width="132" height="132"></div>
+  <div class="hero-text">
+    <h1>{{ site.author.name }}</h1>
+    <p class="tagline">{{ site.author.tagline }}</p>
+    <nav class="links">
+      <a href="#email-riddle" id="email-reveal">Email</a>
+      {%- for link in site.author.links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+      {%- endfor %}
+    </nav>
+    {% include email.html %}
+  </div>
+</header>
+
+<section id="about">
+  <p>
+    Hi, I’m Antoine.
+    I’m working on <strong>mechanistic interpretability</strong> as a <a href="https://www.matsprogram.org/">MATS scholar</a>.
+    My current research goal is to identify the mechanisms that LLMs use to process information, by extracting them directly from the weights.
+  </p>
+  <p>
+    Before that, I did a PhD in biophysics at Institut Pasteur, building CRISPR tools
+    to study the morphogenesis of bacteria, and a postdoc at Harvard Medical School, where I
+    built machines that keep bacteria growing continuously for years, so we can see evolution happen in real time (120,000+ generations so far).
+    I also write <a href="https://malmesbury.substack.com">Telescopic Turnip</a>, a blog about
+    science, progress and the strange rules that shape daily life.
+  </p>
+  <p>
+    The best way to reach out is by email, or by DM on the Open Source Mech Interp Slack. If you're working on an exciting research project, I'd love to hear about it!
+  </p>
+</section>
+
+<section id="ai-safety">
+  <h2>AI safety</h2>
+  <ul class="items">
+    {%- assign papers = site.data.publications | where: "section", "ai-safety" %}
+    {%- for pub in papers %}{% include paper.html pub=pub %}{% endfor %}
+  </ul>
+</section>
+
+<section id="biology">
+  <h2>Biology</h2>
+  <ul class="items">
+    {%- assign papers = site.data.publications | where: "section", "biology" %}
+    {%- for pub in papers %}{% include paper.html pub=pub %}{% endfor %}
+  </ul>
+  <p class="more"><a href="https://scholar.google.com/citations?user=wImtMvYAAAAJ&hl=en">See all papers on Google Scholar →</a></p>
+</section>
+
+<section id="writing">
+  <h2>Writing</h2>
+  <ul class="items">
+    {%- assign posts = site.data.posts | where: "section", "writing" | sort: "date" | reverse %}
+    {%- for post in posts %}{% include post.html post=post %}{% endfor %}
+  </ul>
+  <p class="more"><a href="https://malmesbury.substack.com">See all posts on Telescopic Turnip →</a></p>
+</section>

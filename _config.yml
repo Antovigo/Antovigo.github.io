@@ -1,0 +1,32 @@
+title: Antoine Vigouroux
+description: Research scientist working on AI safety and mechanistic interpretability.
+url: https://antovigo.github.io
+baseurl: ""
+
+author:
+  name: Antoine Vigouroux
+  tagline: Research scientist · AI safety & mechanistic interpretability
+  links:
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=wImtMvYAAAAJ&hl=en
+    - label: LessWrong
+      url: https://www.lesswrong.com/users/elmer-of-malmesbury
+    - label: Substack
+      url: https://malmesbury.substack.com
+    - label: GitHub
+      url: https://github.com/Antovigo
+    - label: X
+      url: https://x.com/teleturnip
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Link previews: small square card with the headshot (set on index.html)
+twitter:
+  card: summary

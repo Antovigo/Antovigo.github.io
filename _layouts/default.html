@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body>
+  <main class="page">
+    {{ content }}
+  </main>
+  <footer class="footer">
+    <p>© {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+  </footer>
+  <script>
+    // Keep tooltips on screen: shift one left when it would overflow the right edge.
+    function placeTip(event) {
+      var tip = event.currentTarget.querySelector(".tip");
+      if (!tip) return;
+      tip.style.left = "0px";
+      var overflow = tip.getBoundingClientRect().right - (document.documentElement.clientWidth - 8);
+      if (overflow > 0) tip.style.left = -overflow + "px";
+    }
+    document.querySelectorAll(".has-tip").forEach(function (el) {
+      el.addEventListener("mouseenter", placeTip);
+      el.addEventListener("focus", placeTip);
+    });
+  </script>
+</body>
+</html>

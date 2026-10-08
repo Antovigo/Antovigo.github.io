@@ -1,0 +1,19 @@
+{%- assign post = include.post -%}
+<li>
+  <p class="item-title">
+    <a href="{{ post.url }}">{{ post.title }}</a> <span class="item-year">({% if post.venue %}{{ post.venue }}, {% endif %}{{ post.date | date: '%Y' }})</span>
+    {%- if post.best_of %} <a class="badge" href="https://www.lesswrong.com/bestoflesswrong?year={{ post.best_of }}{% if post.best_of_category %}&amp;category={{ post.best_of_category }}{% endif %}">Best of LessWrong {{ post.best_of }}</a>{% endif %}
+    {%- if post.curated %} <span class="badge badge-grey has-tip" tabindex="0">{% if post.best_of %}Curated{% else %}Curated on LessWrong{% endif %}<span class="tip" role="tooltip">Selected by LessWrong's moderators; a few posts are curated each week</span></span>{% endif %}
+    {%- for f in post.featured %}
+    {%- capture cls %}badge badge-{{ f.style | default: 'featured' }}{% if f.note %} has-tip{% endif %}{% endcapture %}
+    {%- capture tip %}{% if f.note %}<span class="tip" role="tooltip">{{ f.note }}</span>{% endif %}{% endcapture %}
+    {%- if f.url %} <a class="{{ cls }}" href="{{ f.url }}">{{ f.label }}{{ tip }}</a>
+    {%- else %} <span class="{{ cls }}"{% if f.note %} tabindex="0"{% endif %}>{{ f.label }}{{ tip }}</span>{% endif %}
+    {%- endfor %}
+  </p>
+  <p class="item-blurb">{{ post.blurb }}</p>
+  {%- if post.quote %}
+  <p class="item-quote">“{{ post.quote.text }}” — <a href="{{ post.quote.url }}">{{ post.quote.author }}</a></p>
+  {%- endif %}
+  {%- include figure.html item=post %}
+</li>

@@ -1,0 +1,7 @@
+{%- assign item = include.item -%}
+{%- if item.image %}
+<figure class="item-figure{% if item.image_size %} item-figure-{{ item.image_size }}{% endif %}">
+  <img src="{{ '/assets/img/' | append: item.image | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ item.image_alt | default: item.caption | escape }}" loading="lazy"{% if item.image_height %} style="max-height: {{ item.image_height }}px"{% endif %}>
+  {%- if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
+</figure>
+{%- endif %}
