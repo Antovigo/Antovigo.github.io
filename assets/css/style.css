@@ -112,12 +112,17 @@ section { margin-top: 48px; }
 .email-riddle { display: none; margin: 10px 0 0; font-size: 0.9rem; color: var(--muted); }
 .email-riddle:target { display: block; }
 
-/* Section tabs: a hint of what's on the page; scrolling still reaches everything. */
+/* Section tabs: a hint of what's on the page; scrolling still reaches everything.
+   They stick to the top of the screen once scrolled past. */
 
 html { scroll-behavior: smooth; }
-section { scroll-margin-top: 16px; }
+section { scroll-margin-top: 64px; } /* clear the sticky tabs */
 
 .tabs {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
   display: flex;
   gap: 28px;
   margin-top: 32px;
