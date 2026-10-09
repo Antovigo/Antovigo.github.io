@@ -112,7 +112,37 @@ section { margin-top: 48px; }
 .email-riddle { display: none; margin: 10px 0 0; font-size: 0.9rem; color: var(--muted); }
 .email-riddle:target { display: block; }
 
-#about { margin-top: 36px; font-size: 1.05rem; }
+/* Section tabs: a hint of what's on the page; scrolling still reaches everything. */
+
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 16px; }
+
+.tabs {
+  display: flex;
+  gap: 28px;
+  margin-top: 32px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow-x: auto; /* fallback for very narrow screens; the labels fit on one line otherwise */
+  scrollbar-width: none;
+}
+
+.tabs a {
+  padding: 8px 0;
+  margin-bottom: -1px;
+  color: var(--muted);
+  border-bottom: 2px solid transparent;
+}
+
+.tabs a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  text-decoration: none;
+}
+
+#about { margin-top: 28px; font-size: 1.05rem; }
 
 /* Item lists (papers & posts) */
 
@@ -226,4 +256,5 @@ a.badge:hover { text-decoration: none; filter: brightness(0.95); }
   .page { padding-top: 32px; padding-left: 16px; padding-right: 16px; }
   .avatar { width: 96px; height: 96px; font-size: 2rem; }
   h1 { font-size: 1.8rem; }
+  .tabs { gap: 20px; }
 }
