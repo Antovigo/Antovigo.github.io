@@ -9,7 +9,7 @@
   venue: ICML 2026 Workshop on Mechanistic Interpretability
   year: 2026
   url: https://arxiv.org/abs/2607.13047
-  blurb: Introduces Targeted Parameter Decomposition, a method to extract only the mechanisms that process specific inputs of interest, making parameter decomposition affordable at scale. Now a supported feature in Goodfire’s parameter decomposition library.
+  blurb: Introduces Targeted Parameter Decomposition, a method that extracts only the mechanisms processing specific inputs of interest, making it affordable at scale. Now supported in Goodfire’s parameter decomposition library.
 
 - section: ai-safety
   title: Making sense of parameter-space decomposition
@@ -24,14 +24,14 @@
 - section: biology
   title: "60,000 generations of evolution in perpetual exponential growth"
   authors: "Antoine Vigouroux*, Sadik Yildiz*, Andreas Porse, Harrison Steel & Johan Paulsson"
-  blurb: "I built autonomous fluidics robots that keep bacteria growing indefinitely, long enough to watch them evolve in real time. I took over a long-term <em>E. coli</em> experiment started by Sadik Yildiz and led the analysis of its first 60,000 generations. With Harrison Steel at Oxford, I then designed a new generation of evolution machines that can run unattended for months, and used them to launch a second experiment on <em>V. natriegens</em>, the fastest-growing bacterium known. This experiment has since changed hands twice and is still running, now past 120,000 generations."
+  blurb: "I built autonomous fluidics robots that keep bacteria growing indefinitely, long enough to watch them evolve in real time. I took over a long-term <em>E. coli</em> experiment started by Sadik Yildiz and led its analysis. With Harrison Steel at Oxford, I then designed a new generation of evolution machines that can run unattended for months, and used them to launch a second experiment on <em>V. natriegens</em>, the fastest-growing bacterium known. This experiment has since changed hands twice and is still running, now past 120,000 generations."
   venue: Manuscript coming soon
   year: 2026
   note: "* Equal contribution"
   image: evolution-machine.jpg
   image_alt: Close-up picture of an evolution machine 
   image_height: 260
-  caption: Detail from an evolution machine. The experiment is still running to this day.
+  caption: Detail from an evolution machine.
 
 - section: biology
   title: "CRISPR tools to control gene expression in bacteria"
@@ -67,4 +67,4 @@
   image: tuning-dcas9.png
   image_height: 220
   image_alt: Microscopy of bacteria with shapes ranging from round to long rods
-  caption: Taking control over the shape of bacilliform bacteria through genetic engineering
+  caption: Controlling the shape of rod-shaped bacteria through genetic engineering
