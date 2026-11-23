@@ -24,7 +24,7 @@
 - section: biology
   title: "60,000 generations of evolution in perpetual exponential growth"
   authors: "Antoine Vigouroux*, Sadik Yildiz*, Andreas Porse, Harrison Steel & Johan Paulsson"
-  blurb: "I built autonomous fluidics robots that keep bacteria growing indefinitely, long enough to watch them evolve in real time. I took over a long-term <em>E. coli</em> experiment started by Sadik Yildiz and led its analysis. With Harrison Steel at Oxford, I then designed a new generation of evolution machines that can run unattended for months, and used them to launch a second experiment on <em>V. natriegens</em>, the fastest-growing bacterium known. This experiment has since changed hands twice and is still running, now past 120,000 generations."
+  blurb: "I built autonomous fluidics robots that keep bacteria growing indefinitely, long enough to watch them evolve in real time. I took over a long-term <em>E. coli</em> experiment started by Sadik Yildiz and led the analysis of the evolutionary trajectories over the first 60,000 generations. With Harrison Steel at Oxford, I then designed a new generation of evolution machines that can run unattended for months, and used them to launch a second experiment on <em>V. natriegens</em>, the fastest-growing bacterium known. This experiment has since changed hands twice and is still running, now past 120,000 generations."
   venue: Manuscript coming soon
   year: 2026
   note: "* Equal contribution"
