@@ -159,6 +159,7 @@ section { scroll-margin-top: 64px; } /* clear the sticky tabs */
 .item-title-plain { color: var(--accent); } /* unlinked titles match linked ones */
 .item-authors { font-size: 0.93rem; }
 .item-blurb { font-size: 0.95rem; }
+.items .item-after { margin-top: 8px; }
 .item-quote { font-size: 0.9rem; font-style: italic; color: var(--muted); }
 .item-quote a { color: inherit; }
 
