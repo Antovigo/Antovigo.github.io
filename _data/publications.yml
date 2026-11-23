@@ -1,7 +1,7 @@
 # Selected papers, shown in this order within each section (biology: most recent first).
 # section: ai-safety or biology
 # Your name is bolded automatically. Use * after a name for equal contribution.
-# Optional fields: authors, doi, url, blurb, note, after (text shown below the venue line), image (in assets/img), image_alt, image_size (small or large) or image_height (in pixels), caption.
+# Optional fields: authors, doi, url, blurb (a list for several paragraphs), note, image (in assets/img), image_alt, image_size (small or large) or image_height (in pixels), caption.
 
 - section: ai-safety
   title: "Targeted recovery of weight-space mechanisms from neural networks"
@@ -24,11 +24,12 @@
 - section: biology
   title: "60,000 generations of evolution in perpetual exponential growth"
   authors: "Antoine Vigouroux*, Sadik Yildiz*, Andreas Porse, Harrison Steel & Johan Paulsson"
-  blurb: "I built autonomous fluidics robots that keep bacteria growing indefinitely, long enough to watch them evolve in real time. I took over a long-term <em>E. coli</em> experiment started by Sadik Yildiz and led the analysis of the evolutionary trajectories over the first 60,000 generations."
   venue: Manuscript coming soon
   year: 2026
   note: "* Equal contribution"
-  after: "With Harrison Steel at Oxford, I then designed a new generation of evolution machines that can run unattended for months, and used them to launch a second experiment on <em>V. natriegens</em>, the fastest-growing bacterium known. This experiment has since changed hands twice and is still running, now past 120,000 generations."
+  blurb:
+    - "I built autonomous fluidics robots that keep bacteria growing indefinitely, long enough to watch them evolve in real time. I took over a long-term <em>E. coli</em> experiment started by Sadik Yildiz and led the analysis of the evolutionary trajectories over the first 60,000 generations."
+    - "With Harrison Steel at Oxford, I then designed a new generation of evolution machines that can run unattended for months, and used them to launch a second experiment on <em>V. natriegens</em>, the fastest-growing bacterium known. This experiment has since changed hands twice and is still running, now past 120,000 generations."
   image: evolution-machine.jpg
   image_alt: Close-up picture of an evolution machine 
   image_height: 260

@@ -4,8 +4,7 @@
 <li>
   <p class="item-title">{% if href %}<a href="{{ href }}">{{ pub.title }}</a>{% else %}<span class="item-title-plain">{{ pub.title }}</span>{% endif %}</p>
   {%- if pub.authors %}<p class="item-authors">{{ pub.authors | replace: site.author.name, me_bold }}</p>{% endif %}
-  {%- if pub.blurb %}<p class="item-blurb">{{ pub.blurb }}</p>{% endif %}
   <p class="item-meta"><em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}{% if pub.note %} · {{ pub.note }}{% endif %}</p>
-  {%- if pub.after %}<p class="item-blurb item-after">{{ pub.after }}</p>{% endif %}
+  {%- for para in pub.blurb %}<p class="item-blurb">{{ para }}</p>{% endfor %}
   {%- include figure.html item=pub %}
 </li>
