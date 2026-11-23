@@ -7,6 +7,8 @@ author:
   name: Antoine Vigouroux
   tagline: Research scientist · AI safety & mechanistic interpretability
   links:
+    - label: CV
+      url: /assets/cv.pdf
     - label: Google Scholar
       url: https://scholar.google.com/citations?user=wImtMvYAAAAJ&hl=en
     - label: LessWrong
